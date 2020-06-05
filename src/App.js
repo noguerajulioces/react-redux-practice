@@ -11,11 +11,11 @@ function App() {
     <Router>
       <Header />
 
-      <div className="container">
+      <div className="container mt-5">
         <Switch>
           <Route exact path="/" component={Productos}></Route>
           <Route exact path="/productos/nuevo" component={NuevoProducto}></Route>
-          <Route exact path="/productos/editar/:id" component={NuevoProducto}></Route>
+          <Route exact path="/productos/editar/:id" component={EditarProducto}></Route>
         </Switch>
       </div>
     </Router>
