@@ -10,7 +10,7 @@ const EditarProducto = () => {
                             Editar nuevo producto
                         </h2>
 
-                        <from>
+                        <form>
                             <div className="form-group">
                                 <label>Nombre </label>
                                 <input
@@ -38,7 +38,7 @@ const EditarProducto = () => {
                             >
                                 Editar Producto
                             </button>
-                        </from>
+                        </form>
                     </div>
                 </div>
             </div>
