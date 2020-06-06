@@ -13,6 +13,9 @@ const NuevoProducto = () => {
 
     const agregarProducto = producto => dispatch(crearNuevoProductoAction(producto))
 
+    const cargando = useSelector((state) => state.productos.laoding)
+    const error = useSelector((state) => state.productos.error)
+
     //when de user make sumit
     const submitNuevoProducto = e => {
 
@@ -74,6 +77,9 @@ const NuevoProducto = () => {
                                 Agregar Producto
                             </button>
                         </form>
+
+                        { cargando ? <p>Cargando...</p> : null }
+                        {error ? <p className="alert alert-danger ps mt-4 text-center">Hubo un error</p> : null }
                     </div>
                 </div>
             </div>
